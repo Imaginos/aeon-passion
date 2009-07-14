@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?>
-<!-- last change : 2009-06-18 (23h20 UMT) -->
+<!-- last change : 2009-07-14 -->
 <!--  strings 31000 thru 31999 reserved for skins  -->
 
  <strings>
@@ -518,4 +518,6 @@
 	<string id="31969">Use cleararts instead of thumbnails</string>
 	<string id="31970">music genre Icons on/off</string>
 	<string id="31971">Use poster in multiplex "plot" view</string>
+	<string id="31972">Show recently added movies</string>
+	<string id="31973">Show recently added TV shows</string>
 </strings>

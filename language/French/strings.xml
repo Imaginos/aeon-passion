@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<!-- Date of translation : 2009-06-18 (23h20 UMT) -->
+<!-- Date of translation : 2009-07-14 -->
 <!--  strings 31000 thru 31999 reserved for skins  -->
 
  <strings>
@@ -518,4 +518,6 @@
 	<string id="31969">Utiliser les cleararts à la place des vignettes</string>
 	<string id="31970">Affichage des icones de genre musical</string>
 	<string id="31971">Utiliser le poster sur la présentation "résumé" du multiplex</string>
+	<string id="31972">Afficher automatiquement les derniers films ajoutés</string>
+	<string id="31973">Afficher automatiquement les dernières séries ajoutées</string>
 </strings>

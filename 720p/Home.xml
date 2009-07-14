@@ -1,5 +1,6 @@
 <window id="0">
-	<defaultcontrol always="true">300</defaultcontrol>
+<!--	<defaultcontrol always="true">300</defaultcontrol> --> 
+	<defaultcontrol always="true">500</defaultcontrol> <!-- aeon passion mod (cf2009 recently added) -->
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 
@@ -38,6 +39,7 @@
 	<include>Objects_WeatherPopup</include>
 	<include>Furniture_Time</include>
 	<include>Furniture_HomeRSS</include>
+	<include>latest_added</include> <!-- aeon passion mod (cf2009 recently added) -->
 	<include>Submenu</include>
 	
 	<control type="group">

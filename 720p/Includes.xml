@@ -25,6 +25,7 @@
 <include file="Viewtype_Wall.xml" />
 <include file="Viewtype_Music_Multiplex.xml" /><!-- <<<<<< Add this -->
 <include file="Includes_genre.xml" /><!-- <<<<<< Add this -->
+<include file="Includes_latest_added.xml" /> <!-- aeon passion mod (cf2009 recently added) -->
 
 
 <!-- Text colours ================================== -->

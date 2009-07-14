@@ -252,6 +252,18 @@
 			<onclick>Skin.ToggleSetting(CustomWeatherConditions)</onclick>
 			<selected>Skin.HasSetting(CustomWeatherConditions)</selected>
 		</control>
+		<control type="radiobutton" id="501">
+			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>31972</label>
+			<onclick>Skin.ToggleSetting(showlatestaddedmovies)</onclick>
+			<selected>Skin.HasSetting(showlatestaddedmovies)</selected>
+		</control>
+		<control type="radiobutton" id="502">
+			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>31973</label>
+			<onclick>Skin.ToggleSetting(showlatestaddedtvshow)</onclick>
+			<selected>Skin.HasSetting(showlatestaddedtvshow)</selected>
+		</control>
 	</control>
 	
 	<control type="grouplist" id="11">
