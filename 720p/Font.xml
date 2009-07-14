@@ -580,8 +580,15 @@
 		<name>Font_OSDMusicTitle</name>
 		<filename>aeon_settings.ttf</filename>
 		<size>38</size>
-	</font>		
-
+	</font>
+<!-- Extra Font for music MOD -->
+	<font>
+		  <name>Font_bigtime</name>
+		  <filename>aeon_main.ttf</filename>
+		  <size>85</size>
+	  </font>
+<!-- Extra Font for music MOD -->
+	  
 <!-- VirtualOSD -->
 
 	<font>
