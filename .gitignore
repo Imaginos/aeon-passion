@@ -1,0 +1,8 @@
+# .gitignore for Aeon (FR-fr)
+
+# generated files 
+thumbs.db
+Thumbs.db 
+Liste.txt
+Infos.txt
+ShortcutIcon.ico
