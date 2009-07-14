@@ -264,6 +264,12 @@
 			<onclick>Skin.ToggleSetting(showlatestaddedtvshow)</onclick>
 			<selected>Skin.HasSetting(showlatestaddedtvshow)</selected>
 		</control>
+		<control type="radiobutton" id="503">
+			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>31974</label>
+			<onclick>Skin.ToggleSetting(videoinfosontop)</onclick>
+			<selected>Skin.HasSetting(videoinfosontop)</selected>
+		</control>
 	</control>
 	
 	<control type="grouplist" id="11">

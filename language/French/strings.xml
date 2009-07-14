@@ -420,6 +420,8 @@
 	<string id="31717">TITRE ALBUM</string>
 	<string id="31718">ARTISTE</string>
 	<string id="31719">TEMPS ÉCOULÉ / TEMPS TOTAL</string>
+	<string id="31720">HEURE ACTUELLE</string>
+	<string id="31721">HEURE DE FIN</string>
 	
 <!-- View select -->
 
@@ -520,4 +522,5 @@
 	<string id="31971">Utiliser le poster sur la présentation "résumé" du multiplex</string>
 	<string id="31972">Afficher automatiquement les derniers films ajoutés</string>
 	<string id="31973">Afficher automatiquement les dernières séries ajoutées</string>
+	<string id="31974">Barre de progression : afficher les infos vidéos en haut de l'écran</string>
 </strings>

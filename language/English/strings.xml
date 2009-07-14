@@ -420,6 +420,8 @@
 	<string id="31717">ALBUM TITLE</string>
 	<string id="31718">ARTIST NAME</string>
 	<string id="31719">TIME ELAPSED / DURATION</string>
+	<string id="31720">CURRENT TIME</string>
+	<string id="31721">ENDING TIME</string>
 	
 <!-- View select -->
 
@@ -520,4 +522,5 @@
 	<string id="31971">Use poster in multiplex "plot" view</string>
 	<string id="31972">Show recently added movies</string>
 	<string id="31973">Show recently added TV shows</string>
+	<string id="31974">Show Video infos on top of dialogseek</string>
 </strings>
