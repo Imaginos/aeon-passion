@@ -109,8 +109,8 @@
 	
 	<font>
 		<name>Font_List</name>
-		<filename>aeon_title.ttf</filename>
-		<size>22</size>
+		<filename>aeon_list.ttf</filename>
+		<size>16</size>
 	</font>
 	
 	<font>
@@ -127,20 +127,8 @@
 
 	<font>
 		<name>Font_ListDetail</name>
-		<filename>aeon_title.ttf</filename>
-		<size>18</size>
-	</font>
-	
-	<font>
-		<name>Font_ListDetailTV</name>
-		<filename>aeon_title.ttf</filename>
-		<size>16</size>
-	</font>	
-
-	<font>
-		<name>Font_ListTrack</name>
-		<filename>aeon_title.ttf</filename>
-		<size>47</size>
+		<filename>aeon_list.ttf</filename>
+		<size>13</size>
 	</font>
 	
 	<font>
@@ -229,8 +217,8 @@
 
     <font>
       <name>Font_ContextMenuButton</name>
-      <filename>aeon_title.ttf</filename>
-      <size>18</size>
+      <filename>aeon_settings.ttf</filename>
+      <size>20</size>
     </font>
 
     <font>
@@ -539,7 +527,7 @@
       <name>Font_Vitals</name>
       <filename>aeon_settings.ttf</filename>
       <size>21</size>
-	  <linespacing>2.4</linespacing>
+	  <linespacing>1.9</linespacing>
     </font>
 
 <!-- Wall -->
@@ -627,14 +615,8 @@
 
 	<font>
 		<name>Font_KeyboardKeys</name>
-		<filename>aeon_player.ttf</filename>
-		<size>19</size>
-	</font>
-	
-	<font>
-		<name>Font_KeyboardTitle</name>
-		<filename>aeon_title.ttf</filename>
-		<size>19</size>
+		<filename>aeon_edit.ttf</filename>
+		<size>17</size>
 	</font>
 
 	<font>
@@ -651,8 +633,8 @@
 
 	<font>
 		<name>Font_KeyboardEdit</name>
-		<filename>aeon_player.ttf</filename>
-		<size>21</size>
+		<filename>aeon_edit.ttf</filename>
+		<size>19</size>
 	</font>	
 
 <!-- OSD -->

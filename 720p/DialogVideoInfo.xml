@@ -1,5 +1,4 @@
 <window type="dialog" id="2003">
-
 	<defaultcontrol>8</defaultcontrol>
 	<zorder>2</zorder>
 	<coordinates>
@@ -7,7 +6,6 @@
 	<posx>0</posx>
 	<posy>0</posy>
 	</coordinates>
-	
 	<include>Animation_CommonFade</include>
 	<controls>
 
@@ -18,9 +16,9 @@
 
 	<control type="image">
 		<description>background image</description>
-		<posx>480</posx>
+		<posx>486</posx>
 		<posy>0</posy>
-		<width>800</width>
+		<width>795</width>
 		<height>720</height>
 		<texture>info/info_rightpanelbottom.png</texture>
 		<animation effect="slide" time="0" start="22,0" end="22,0" condition="Container.Content(episodes)">Conditional</animation>
@@ -39,7 +37,7 @@
 	<control type="image">
 		<posx>0</posx>
 		<posy>0</posy>
-		<width>480</width>
+		<width>510</width>
 		<height>720</height>
 		<texture>common/darkgrey.png</texture>
 		<visible>Container.Content(episodes)</visible>
@@ -48,67 +46,92 @@
 	<control type="image">
 		<posx>0</posx>
 		<posy>83</posy>
-		<width>480</width>
+		<width>510</width>
 		<height>637</height>
 		<texture>info/musicinfogradient.png</texture>
 		<visible>Container.Content(episodes)</visible>
 	</control>
 
+	<control type="group">
+		<posx>55</posx>
+		<animation effect="rotatey" time="0" start="-20" end="-20" center="20,0" condition="true">Conditional</animation>
+		<animation effect="slide" start="430" end="0" time="700" tween="cubic" easing="out" delay="400">WindowOpen</animation>
+		<visible>Container.Content(episodes)</visible>
+		<control type="image">
+			<description>Cover image</description>
+			<width>370</width>
+			<height>400</height>
+			<posy>160</posy>
+			<texture>$INFO[listitem.thumb]</texture>
+			<bordertexture border="-77">info/musicinfoshadow.png</bordertexture>
+			<aspectratio>keep</aspectratio>
+		</control>
+		<control type="image">
+			<description>Cover image</description>
+			<posy>560</posy>
+			<width>370</width>
+			<height>400</height>
+			<texture flipy="true" diffuse="common/Thumb_Mask6.png">$INFO[listitem.thumb]</texture>
+			<aspectratio>keep</aspectratio>
+		</control>
+	</control>
+	
 	<control type="image">
 		<description>Cover image</description>
 		<posx>0</posx>
 		<posy>0</posy>
-		<width>480</width>
+		<width>486</width>
 		<height>720</height>
 		<texture>info/movieinfogradient.png</texture>
-		<aspectratio>stretch</aspectratio>
-		<visible>!Skin.HasSetting(videotv)</visible>	
+		<aspectratio>keep</aspectratio>
+		<visible>!Container.Content(episodes)</visible>
 	</control>
 
 	<control type="largeimage">
 		<description>Cover image</description>
 		<posx>0</posx>
 		<posy>0</posy>
-		<width>480</width>
+		<width>486</width>
 		<height>720</height>
-		<texture>$INFO[listitem.path]poster.jpg</texture>
-		<aspectratio>stretch</aspectratio>
-		<visible>!Skin.HasSetting(videotv)</visible>
+		<texture>$INFO[listitem.thumb]</texture>
+		<aspectratio>keep</aspectratio>
+		<visible>!Container.Content(episodes)</visible>		
 	</control>
 	
 	<control type="largeimage">
 		<description>Cover image</description>
 		<posx>0</posx>
 		<posy>0</posy>
-		<width>480</width>
+		<width>486</width>
 		<height>720</height>
-		<texture>$INFO[listitem.path]poster.jpg</texture>
-		<aspectratio>stretch</aspectratio>
-		<visible>Skin.HasSetting(videotv)</visible>
+		<texture>$INFO[listitem.path]movie.tbn</texture>
+		<aspectratio>keep</aspectratio>
+		<fadetime>500</fadetime>
+		<visible>!Container.Content(episodes)</visible>		
 	</control>
 	
-	<!-- added night rightpaneltop + visible condition -->
-	
+	<control type="largeimage">
+		<description>Cover image</description>
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>486</width>
+		<height>720</height>
+		<texture>$INFO[listitem.path]-big.png</texture>
+		<aspectratio>keep</aspectratio>
+		<fadetime>500</fadetime>
+		<visible>!Container.Content(episodes)</visible>		
+	</control>	
+
 	<control type="image">
 		<description>background image</description>
-		<posx>480</posx>
+		<posx>486</posx>
 		<posy>0</posy>
-		<width>800</width>
+		<width>795</width>
 		<height>720</height>
 		<texture>info/info_rightpaneltop.png</texture>
-		<visible>!Skin.HasSetting(darkshowcase)</visible>
-	</control>	
-	
-	<control type="image">
-		<description>background image</description>
-		<posx>480</posx>
-		<posy>0</posy>
-		<width>800</width>
-		<height>720</height>
-		<texture>info/night/info_rightpaneltop.png</texture>
-		<visible>Skin.HasSetting(darkshowcase)</visible>
+		<animation effect="slide" time="0" start="22,0" end="22,0" condition="Container.Content(episodes)">Conditional</animation>		
 	</control>
-	
+
 <!-- Movie info -->
 
 	<control type="group">
@@ -125,7 +148,6 @@
 			<width>695</width>
 			<height>569</height>
 			<texture>info/info_panellines_movie.png</texture>
-			<animation effect="fade" start="70" end="70" time="0" condition="Skin.HasSetting(lite)">Conditional</animation>				
 		</control>
 
 		<control type="image">
@@ -257,25 +279,21 @@
 			<control type="button" id="6">
 			<label>31410</label>
 			<include>Objects_FSInfoButton</include>
-			<visible>!Skin.HasSetting(kiosk)</visible>			
 			</control>
 
 			<control type="button" id="10">
 			<label>31418</label>
 			<include>Objects_FSInfoButton</include>
-			<visible>!Skin.HasSetting(kiosk)</visible>
 			</control>
 
 			<control type="button" id="12">
 			<label>31412</label>
 			<include>Objects_FSInfoButton</include>
-			<visible>!Skin.HasSetting(kiosk)</visible>			
 			</control>
 			
 			<control type="button" id="11">
 			<label>31409</label>
 			<include>Objects_FSInfoButton</include>
-			<visible>!IsEmpty(ListItem.Trailer)</visible>
 			</control>
 		</control>
 
@@ -284,11 +302,11 @@
 			<posx>3</posx>
 			<posy>354</posy>
 			<width>630</width>
-			<height>212</height>
+			<height>214</height>
 			<align>left</align>
 			<font>Font_FSInfoPlot</font>
 			<label fallback="31414">$INFO[ListItem.Plot]</label>
-			<autoscroll delay="15000" time="1000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>			
+			<autoscroll delay="3000" time="1000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>			
 			<include>Colour_OffWhite</include>
 		</control>
 		
@@ -364,7 +382,6 @@
 			<height>569</height>
 			<texture>info/info_tv_panellines.png</texture>
 			<visible>Container.Content(tvshows)</visible>
-			<animation effect="fade" start="70" end="70" time="0" condition="Skin.HasSetting(lite)">Conditional</animation>				
 		</control>
 		
 		<control type="label">
@@ -448,28 +465,29 @@
 			<include>Objects_FSInfoButton</include>
 			</control>
 
+			<control type="button" id="9">
+			<label>31420</label>
+			<include>Objects_FSInfoButton</include>
+			</control>
+
 			<control type="button" id="6">
 			<label>31410</label>
 			<include>Objects_FSInfoButton</include>
-			<visible>!Skin.HasSetting(kiosk)</visible>			
 			</control>
 
 			<control type="button" id="10">
 			<label>31418</label>
 			<include>Objects_FSInfoButton</include>
-			<visible>!Skin.HasSetting(kiosk)</visible>			
 			</control>
 
 			<control type="button" id="12">
 			<label>31412</label>
 			<include>Objects_FSInfoButton</include>
-			<visible>!Skin.HasSetting(kiosk)</visible>			
 			</control>
 			
 			<control type="button" id="11">
 			<label>31409</label>
 			<include>Objects_FSInfoButton</include>
-			<visible>!IsEmpty(ListItem.Trailer)</visible>				
 			</control>
 		</control>
 
@@ -478,10 +496,10 @@
 			<posx>3</posx>
 			<posy>330</posy>
 			<width>630</width>
-			<height>212</height>
+			<height>217</height>
 			<align>left</align>
 			<font>Font_FSInfoPlot</font>
-			<autoscroll delay="15000" time="1000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>			
+			<autoscroll delay="3000" time="1000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>			
 			<label fallback="31414">$INFO[ListItem.Plot]</label>
 			<include>Colour_OffWhite</include>
 		</control>
@@ -539,7 +557,6 @@
 			<width>695</width>
 			<height>569</height>
 			<texture>info/info_tv_panellines.png</texture>
-			<animation effect="fade" start="70" end="70" time="0" condition="Skin.HasSetting(lite)">Conditional</animation>				
 		</control>
 		
 		<control type="label">
@@ -628,10 +645,14 @@
 			<include>Objects_FSInfoButton</include>
 			</control>
 
+			<control type="button" id="9">
+			<label>31420</label>
+			<include>Objects_FSInfoButton</include>
+			</control>
+
 			<control type="button" id="6">
 			<label>31410</label>
 			<include>Objects_FSInfoButton</include>
-			<visible>!Skin.HasSetting(kiosk)</visible>			
 			</control>
 
 			<control type="button" id="10">
@@ -646,10 +667,10 @@
 			<posx>3</posx>
 			<posy>330</posy>
 			<width>630</width>
-			<height>212</height>
+			<height>217</height>
 			<align>left</align>
 			<font>Font_FSInfoPlot</font>
-			<autoscroll delay="15000" time="1000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>			
+			<autoscroll delay="3000" time="1000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>			
 			<label fallback="31414">$INFO[ListItem.Plot]</label>
 			<include>Colour_OffWhite</include>
 		</control>
@@ -691,7 +712,7 @@
 	
 	</control>	
 
-	<!-- <include>Background_ContextBlack</include> -->
+	<include>Background_ContextBlack</include>
 	
 	</controls>
 </window>
