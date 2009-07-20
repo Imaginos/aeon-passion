@@ -26,6 +26,7 @@
 		  <randomize>true</randomize>
 		  <loop>yes</loop>
 		  <aspectratio>keep</aspectratio>
+		  <include>Animation_BackgroundFade</include>
 		  <visible>!Visualisation.Enabled + Player.HasAudio</visible>
 	</control>
 
