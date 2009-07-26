@@ -481,7 +481,7 @@
 				<onclick>SetFocus(300)</onclick>
 				<onleft>300</onleft>
 				<onright>300</onright>
-				<onup>12</onup><!--MODs -->
+				<onup>13</onup><!--MODs -->
 				<ondown>7</ondown>
 				<onfocus>Skin.Reset(bmtransit)</onfocus>
 				<visible allowhiddenfocus="true">![Control.HasFocus(6) | Control.HasFocus(300) | Control.HasFocus(92)]</visible>
@@ -494,7 +494,7 @@
 				<onclick>SetFocus(300)</onclick>
 				<onleft>300</onleft>
 				<onright>300</onright>
-				<onup>12</onup><!--MODs -->
+				<onup>13</onup><!--MODs -->
 				<ondown>7</ondown>
 				<visible>Control.HasFocus(6) | Control.HasFocus(300) | Control.HasFocus(92)</visible>
 			</control>
@@ -671,7 +671,8 @@
 				<textcolor>FF262728</textcolor>
 				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 				<visible>Control.HasFocus(10)</visible>
-			</control>			
+			</control>
+
 			<control type="button" id="11">
 				<description>Advanced</description>
 				<posy>290</posy>
@@ -707,24 +708,24 @@
 				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 				<visible>Control.HasFocus(11)</visible>
 			</control>
-<!--MODs -->
+<!-- FLAGS MANAGEMENT BUTTON -->
 			<control type="button" id="12">
 				<description>Mods</description>
 				<posy>348</posy>
-				<label>Passion xbmc</label>
+				<label>Flags management</label>
 				<include>Objects_SettingsSectionMenuButton</include>
 				<onup>11</onup>
-				<ondown>6</ondown>
+				<ondown>13</ondown>
 				<onclick>XBMC.ActivateWindow(57)</onclick>	
 				<visible allowhiddenfocus="true">!Control.HasFocus(12)</visible>
 			</control>
 			<control type="button">
 				<description>OSD</description>
 				<posy>348</posy>
-				<label>Passion xbmc</label>
+				<label>Flags management</label>
 				<include>Objects_SettingsSectionMenuButtonFocused</include>
 				<onup>11</onup>
-				<ondown>6</ondown>
+				<ondown>13</ondown>
 				<onleft>60</onleft>
 				<onright>60</onright>				
 				<visible>Control.HasFocus(12)</visible>
@@ -744,6 +745,44 @@
 				<textcolor>FF262728</textcolor>
 				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 				<visible>Control.HasFocus(12)</visible>
+			</control>
+<!--MODS BUTTON -->
+			<control type="button" id="13">
+				<description>Mods</description>
+				<posy>406</posy>
+				<label>Passion xbmc</label>
+				<include>Objects_SettingsSectionMenuButton</include>
+				<onup>12</onup>
+				<ondown>6</ondown>
+				<onclick>XBMC.ActivateWindow(58)</onclick>	
+				<visible allowhiddenfocus="true">!Control.HasFocus(13)</visible>
+			</control>
+			<control type="button">
+				<description>OSD</description>
+				<posy>406</posy>
+				<label>Passion xbmc</label>
+				<include>Objects_SettingsSectionMenuButtonFocused</include>
+				<onup>12</onup>
+				<ondown>6</ondown>
+				<onleft>60</onleft>
+				<onright>60</onright>				
+				<visible>Control.HasFocus(13)</visible>
+			</control>
+			<control type="label">
+				<description>OSD Sub Unfocused</description>
+				<posy>438</posy>
+				<label>Flags options</label>
+				<textcolor>FFf5f5f5</textcolor>
+				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
+				<visible>!Control.HasFocus(13)</visible>
+			</control>
+			<control type="label">
+				<description>OSD Sub Unfocused</description>
+				<posy>438</posy>
+				<label>Flags options</label>
+				<textcolor>FF262728</textcolor>
+				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
+				<visible>Control.HasFocus(13)</visible>
 			</control>
 <!-- end -->
 		</control>

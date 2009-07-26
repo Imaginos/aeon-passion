@@ -516,12 +516,17 @@
 	<string id="31965">Correction verticale de la hauteur des labels</string>
 	<string id="31966">disposition originale</string>
 	<string id="31967">Options des mods</string>
-	<string id="31968">Afficher les vignettes d'épisodes dans la barre de progression</string>
-	<string id="31969">Utiliser les cleararts à la place des vignettes</string>
+	<string id="31968">Afficher la vignette d'épisodes sur activation de la barre de progression</string>
+	<string id="31969">Utiliser un clearart au lieu de la vignette</string>
 	<string id="31970">Affichage des icones de genre musical</string>
 	<string id="31971">Utiliser le poster sur la présentation "résumé" du multiplex</string>
 	<string id="31972">Afficher automatiquement les derniers films ajoutés</string>
 	<string id="31973">Afficher automatiquement les dernières séries ajoutées</string>
-	<string id="31974">Barre de progression : afficher les infos vidéos en haut de l'écran</string>
+	<string id="31974">Afficher les infos vidéos en haut de l'écran</string>
 	<string id="31975">Animation des fonds d'écran (Effet Ken Burns)</string>
+	<string id="31976">Commun</string>
+	<string id="31977">Afficher le poster du film sur activation de la barre de progression</string>
+	<string id="31978">Options du mode "épisodes"</string>
+	<string id="31979">Options du mode "films"</string>
+	<string id="31980">Barre de progr.</string>
 </strings>

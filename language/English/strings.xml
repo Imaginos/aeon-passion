@@ -516,12 +516,17 @@
 	<string id="31965">Vertical correction</string>
 	<string id="31966">Initial layout</string>
 	<string id="31967">Mods settings</string>
-	<string id="31968">Show episode's thumbnails on seekbar</string>
-	<string id="31969">Use cleararts instead of thumbnails</string>
+	<string id="31968">Show episode's thumbnail on seekbar activation</string>
+	<string id="31969">Use clearart instead of thumbnail</string>
 	<string id="31970">music genre Icons on/off</string>
 	<string id="31971">Use poster in multiplex "plot" view</string>
 	<string id="31972">Show recently added movies</string>
 	<string id="31973">Show recently added TV shows</string>
-	<string id="31974">Show Video infos on top of dialogseek</string>
+	<string id="31974">Show Video infos on top</string>
 	<string id="31975">Backdrops animation (Ken Burns Effect)</string>
+	<string id="31976">Common</string>
+	<string id="31977">Show movie poster on seekbar activation</string>
+	<string id="31978">"episodes" mode settings</string>
+	<string id="31979">"movies" mode settings</string>
+	<string id="31980">Seekbar</string>
 </strings>

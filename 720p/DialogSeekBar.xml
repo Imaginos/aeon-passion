@@ -83,7 +83,7 @@
 	
 	<!-- mod top control -->
 <control type="group">
-	<visible>Skin.HasSetting(videoinfosontop)</visible>
+	<visible>[VideoPlayer.Content(episodes) + Skin.HasSetting(videoinfosontop)] | [VideoPlayer.Content(movies) + Skin.HasSetting(movieinfosontop)]</visible>
 	<description>top controls</description> 	
 	<control type="image">
 		<description>Panel</description>
@@ -156,61 +156,6 @@
 
 </control>
 
-<!--	
-
-
-<control type="label">
-  <posx>20</posx> 
-  <posy>-19</posy> 
-  <width>412</width> 
-  <height>25</height> 
-  <label>$INFO[VideoPlayer.Title]</label>
-  <align>left</align> 
-  <aligny>center</aligny> 
-  <font>Font_OSDTime</font>
-<visible>VideoPlayer.Content(episodes)</visible> 
- </control>
- 
- <control type="label">
-  <posx>20</posx> 
-  <posy>-19</posy> 
-  <width>412</width> 
-  <height>25</height> 
-  <label>$INFO[VideoPlayer.Title], $INFO[VideoPlayer.mpaa]</label>
-  <align>left</align> 
-  <aligny>center</aligny> 
-  <font>Font_OSDTime</font>
-<visible>VideoPlayer.Content(movies)</visible> 
- </control>
- 
-
-<control type="label">
-  <posx>20</posx> 
-  <posy>-19</posy> 
-  <width>412</width> 
-  <height>25</height> 
-  <label>$INFO[System.DVDLabel] Disc</label> 
-  <align>left</align> 
-  <aligny>center</aligny> 
-  <font>Font_OSDTime</font> 
-<visible>System.HasMediadvd + ![VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)]</visible>
-  </control>
-
-<control type="label">
-  <posx>448</posx> 
-  <posy>-19</posy> 
-  <width>50</width> 
-  <height>25</height> 
-  <label>$INFO[VideoPlayer.Year]</label> 
-  <align>left</align> 
-  <aligny>center</aligny> 
-  <font>Font_OSDTime</font> 
-  <textcolor>60ffffff</textcolor> 
-  <scroll>true</scroll> 
-  </control>
-  
-  -->
-
 <!--  Size and implementation of covers -->
 <control type="group">
 	<control type="image">
@@ -220,7 +165,7 @@
 		<width>150</width> 
 		<height>225</height>
 		<texture diffuse="thumbs/movieposter_mask.png">$INFO[VideoPlayer.cover]</texture>
-		<visible>VideoPlayer.Content(movies)</visible>
+		<visible>VideoPlayer.Content(movies) + Skin.HasSetting(posteronseekbar)</visible>
 	</control>
 	<control type="image">
 		<posx>1130</posx> 
@@ -229,7 +174,7 @@
 		<height>225</height>
 		<texture>thumbs/poster_glass.png</texture>
 		<aspectratio>stretch</aspectratio>
-		<visible>VideoPlayer.Content(movies)</visible>
+		<visible>VideoPlayer.Content(movies) + Skin.HasSetting(posteronseekbar)</visible>
 	</control>
 </control>
 
@@ -358,7 +303,7 @@
 		<aligny>center</aligny>
 		<font>Font_OSDMusicArtist</font>
 		<label>$INFO[VideoPlayer.season].$INFO[VideoPlayer.episode]: $INFO[VideoPlayer.title]</label>
-		<visible>!IsEmpty(VideoPlayer.season) + !Skin.HasSetting(videoinfosontop)</visible>
+		<visible>!IsEmpty(VideoPlayer.season) + !Skin.HasSetting(episodeinfosontop)</visible>
 	</control>
 	<control type="label">
 		<posx>0</posx>
@@ -369,7 +314,7 @@
 		<aligny>center</aligny>
 		<font>Font_OSDMusicArtist</font>
 		<label>$INFO[VideoPlayer.title]</label>
-		<visible>IsEmpty(VideoPlayer.season) + !Skin.HasSetting(videoinfosontop)</visible>
+		<visible>IsEmpty(VideoPlayer.season) + !Skin.HasSetting(movieinfosontop)</visible>
 	</control>
 <!-- aeon passion mod END -->
 
