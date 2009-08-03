@@ -2,7 +2,6 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 	
-	
 	<control type="visualisation" id="2">
 		<description>visualisation</description>
 		<posx>0</posx>
@@ -10,7 +9,6 @@
 		<width>1280</width>
 		<height>720</height>
 	</control>
-	
 <!--artist slideshow if fanart exist in define folder--> 
 
 	<control type="multiimage">
@@ -20,13 +18,14 @@
 		  <width>1280</width>
 		  <height>720</height>
 		  <imagepath>backdrops/artist_fanart/$INFO[MusicPlayer.Artist]</imagepath>
-		  <timeperimage>4000</timeperimage>
+		  <timeperimage>10000</timeperimage>
 		  <fadetime>2000</fadetime>
 		  <pauseatend>4000</pauseatend>
 		  <randomize>true</randomize>
 		  <loop>yes</loop>
 		  <aspectratio>keep</aspectratio>
 		  <include>Animation_BackgroundFade</include>
+		  <animation effect="zoom" start="110" end="130" center="auto" time="15000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(musicviszoom)">Conditional</animation>
 		  <visible>!Visualisation.Enabled + Player.HasAudio</visible>
 	</control>
 
@@ -341,6 +340,17 @@
 			<label>[COLOR 91FFFFFF]$INFO[MusicPlayer.Time] / $INFO[MusicPlayer.Duration][/COLOR]</label>
 		</control>		
 	
+	</control>
+	
+	<control type="label">
+		<posx>200</posx>
+		<posy>685</posy>
+		<width>400</width>
+		<font>Font_Time</font>
+		<align>right</align>
+		<include>Colour_WhiteAlpha80</include>
+		<label>[COLOR FFe5e5e5][UPPERCASE]$INFO[System.Date][/UPPERCASE]  |  [/COLOR][COLOR FFcdcdcd]$INFO[System.Time][/COLOR]</label>
+		<visible>Skin.HasSetting(musicvistime)</visible>
 	</control>
 	
 	</controls>

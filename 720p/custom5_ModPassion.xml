@@ -41,7 +41,7 @@
 			<posy>0</posy>
 			<label>31234</label>
 			<include>Objects_SettingsSectionMenuButton</include>
-			<onup>4</onup>
+			<onup>5</onup>
 			<ondown>2</ondown>
 			<onleft>10</onleft>
 			<onright>10</onright>
@@ -52,7 +52,7 @@
 			<posy>0</posy>
 			<label>31234</label>
 			<include>Objects_SettingsSectionMenuButtonFocused</include>
-			<onup>4</onup>
+			<onup>5</onup>
 			<ondown>8</ondown>
 			<onleft>10</onleft>
 			<onright>10</onright>
@@ -158,7 +158,7 @@
 			<label>31980</label>
 			<include>Objects_SettingsSectionMenuButton</include>
 			<onup>3</onup>
-			<ondown>1</ondown>
+			<ondown>5</ondown>
 			<onleft>14</onleft>
 			<onright>14</onright>
 			<onclick>SetFocus(14)</onclick>
@@ -169,7 +169,7 @@
 			<label>31980</label>
 			<include>Objects_SettingsSectionMenuButtonFocused</include>
 			<onup>3</onup>
-			<ondown>1</ondown>
+			<ondown>5</ondown>
 			<onleft>14</onleft>
 			<onright>14</onright>
 			<visible>Control.HasFocus(4) | ControlGroup(14).HasFocus</visible>
@@ -189,6 +189,44 @@
 			<textcolor>FF262728</textcolor>
 			<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 			<visible>Control.HasFocus(4) | ControlGroup(14).HasFocus</visible>
+		</control>
+
+		<control type="button" id="5">
+			<posy>232</posy>
+			<label>Music Vis.</label>
+			<include>Objects_SettingsSectionMenuButton</include>
+			<onup>4</onup>
+			<ondown>1</ondown>
+			<onleft>15</onleft>
+			<onright>15</onright>
+			<onclick>SetFocus(15)</onclick>
+			<visible allowhiddenfocus="true">![Control.HasFocus(5) | ControlGroup(15).HasFocus]</visible>
+		</control>
+		<control type="button" id="5">
+			<posy>232</posy>
+			<label>Music Vis.</label>
+			<include>Objects_SettingsSectionMenuButtonFocused</include>
+			<onup>4</onup>
+			<ondown>1</ondown>
+			<onleft>15</onleft>
+			<onright>15</onright>
+			<visible>Control.HasFocus(5) | ControlGroup(15).HasFocus</visible>
+		</control>
+		<control type="label">
+			<description>Sub menu</description>
+			<posy>264</posy>
+			<label>31952</label>
+			<textcolor>FFf5f5f5</textcolor>
+			<include>Objects_SettingsSectionMenuButtonSubtitle</include>
+			<visible>![Control.HasFocus(5) | ControlGroup(15).HasFocus]</visible>
+		</control>
+		<control type="label">
+			<description>Sub menu</description>
+			<posy>264</posy>
+			<label>31952</label>
+			<textcolor>FF262728</textcolor>
+			<include>Objects_SettingsSectionMenuButtonSubtitle</include>
+			<visible>Control.HasFocus(5) | ControlGroup(15).HasFocus</visible>
 		</control>
 	</control>
 
@@ -354,6 +392,28 @@
 			<onclick>Skin.ToggleSetting(movieinfosontop)</onclick>
 			<selected>Skin.HasSetting(movieinfosontop)</selected>
 			<visible>Skin.HasSetting(showfilmssettings)</visible>
+		</control>
+	</control>
+	
+	<control type="grouplist" id="15">
+		<visible>Control.HasFocus(5) | ControlGroup(15).HasFocus</visible>
+		<include>Objects_SettingsControlAreaVars</include>
+		<onup>15</onup>
+		<ondown>15</ondown>
+		<onleft>5</onleft>
+		<onright>5</onright>
+		<usecontrolcoords>true</usecontrolcoords>
+		<control type="radiobutton" id="500">
+			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>31981</label>
+			<onclick>Skin.ToggleSetting(musicviszoom)</onclick>
+			<selected>Skin.HasSetting(musicviszoom)</selected>
+		</control>
+		<control type="radiobutton" id="501">
+			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>31260</label>
+			<onclick>Skin.ToggleSetting(musicvistime)</onclick>
+			<selected>Skin.HasSetting(musicvistime)</selected>
 		</control>
 	</control>
 	<include>Furniture_SettingsFrontPanel</include>
